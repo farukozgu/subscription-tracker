@@ -10,13 +10,15 @@ const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 function makeStub() {
     const handler: any = {
         from: (_table: string) => handler,
-        select: async () => ({ data: null, error: null }),
-        insert: async () => ({ data: null, error: null }),
-        delete: async () => ({ data: null, error: null }),
-        update: async () => ({ data: null, error: null }),
+        select: (_sel?: string) => handler,
+        insert: (_rows?: any) => handler,
+        delete: () => handler,
+        update: (_vals?: any) => handler,
         eq: () => handler,
         order: () => handler,
+        // Terminal executor methods return a resolved promise with null data.
         single: async () => ({ data: null, error: null }),
+        then: async (onfulfilled: any) => onfulfilled({ data: null, error: null }),
     };
 
     return handler as unknown as SupabaseClient;
