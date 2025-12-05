@@ -8,7 +8,7 @@ Track your digital subscriptions, monthly costs, yearly totals, and category-bas
 ---
 
 ## 🌐 Live Demo  
-👉 **https://your-vercel-link.vercel.app/**
+👉 **[https://your-vercel-link.vercel.app/](https://subscription-tracker-lyart-ten.vercel.app/)**
 
 ---
 
