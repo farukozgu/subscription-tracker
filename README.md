@@ -49,9 +49,11 @@ npm run dev
 ```
 ## Create a .env.local file and add your Supabase keys:
 
+```bash
 NEXT_PUBLIC_SUPABASE_URL=your_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
 
+```
 ---
 
 ## 📄 License
