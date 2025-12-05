@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📦 Subscription Tracker
 
-## Getting Started
+A clean and modern mini SaaS application built with **Next.js, TypeScript, Tailwind CSS, and Supabase**.  
+Track your digital subscriptions, monthly costs, yearly totals, and category-based spending analytics with a smooth, responsive UI.
 
-First, run the development server:
+> **Note:** This is a public demo environment. Data is shared across all visitors and should be treated as test data only.
+
+---
+
+## 🌐 Live Demo  
+👉 **https://your-vercel-link.vercel.app/**
+
+---
+
+
+## 🖼️ Preview
+
+<img width="2560" height="1271" alt="screencapture-localhost-3000-2025-12-05-21_52_29" src="https://github.com/user-attachments/assets/36e3d75e-98b4-4e86-aa2f-1b5212eb597c" />
+
+---
+
+## 🚀 Features
+
+- Add and manage subscriptions (name, price, currency, billing cycle, category, billing day)
+- Monthly & yearly cost calculations (currency-aware)
+- Visual spending analytics and highlights
+- Smooth UI interactions powered by **Framer Motion**
+- Supabase-backed CRUD operations
+- Clean, responsive dashboard design
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js 14 (App Router)**
+- **TypeScript**
+- **Tailwind CSS**
+- **Supabase (Database + CRUD)**
+- **Framer Motion**
+
+---
+
+## 🔧 Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
+## Create a .env.local file and add your Supabase keys:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+NEXT_PUBLIC_SUPABASE_URL=your_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📄 License
 
-## Learn More
+This project is open-source and free to use under the MIT License.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
